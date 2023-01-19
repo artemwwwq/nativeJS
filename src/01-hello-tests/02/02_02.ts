@@ -3,7 +3,7 @@ export type StreetType = {
 }
 
 export type AddressType = {
-    number: number
+    number?: number
     street: StreetType
 }
 
@@ -14,7 +14,7 @@ export type HouseType = {
     address: AddressType
 }
 
-type GovernmentBuildingsType = {
+export type GovernmentBuildingsType = {
     type: "HOSPITAL" | "FIRE-STATION"
     budget: number
     staffCount: number
