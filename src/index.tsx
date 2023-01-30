@@ -5,15 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {splitIntoWords} from "./01-hello-tests/01";
 import {dev4, messages} from "./01-hello-tests/05/05_01";
+import {User} from "./01-hello-tests/06/06-callbacks";
 
-
-
-console.log(messages)
-
-const sentense = 'Hello my friend'
-
-let result = splitIntoWords(sentense)
-console.log(result)
 
 
 const root = ReactDOM.createRoot(
@@ -21,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <User />
   </React.StrictMode>
 );
 
