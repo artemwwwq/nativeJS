@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {splitIntoWords} from "./01-hello-tests/01";
+import {dev4, messages} from "./01-hello-tests/05/05_01";
 
+
+
+console.log(messages)
 
 const sentense = 'Hello my friend'
 
