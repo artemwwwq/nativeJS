@@ -15,11 +15,11 @@ type ManType = {
 
 
 let props: ManType;
-beforeEach(()=> {
+beforeEach(() => {
     props = {
         name: 'Artem',
         age: 32,
-        lessons:[ {title: '1'}, {title: '2'}],
+        lessons: [{title: '1'}, {title: '2'}],
         address: {
             street: {
                 title: 'Nezavisimosti street'
@@ -29,10 +29,9 @@ beforeEach(()=> {
 })
 
 
-
-test('', ()=>{
-   /* const age = man.age
-    const lessons = man.lessons*/
+test('', () => {
+    /* const age = man.age
+     const lessons = man.lessons*/
     const {age, lessons} = props
     const {title} = props.address.street
 
@@ -43,7 +42,7 @@ test('', ()=>{
     expect(title).toBe('Nezavisimosti street')
 })
 
-test('', ()=> {
+test('', () => {
     const l1 = props.lessons[0]
     const l2 = props.lessons[1]
 
@@ -56,3 +55,4 @@ test('', ()=> {
     expect(ls1.title).toBe('1')
     expect(ls2.title).toBe('2')
 })
+

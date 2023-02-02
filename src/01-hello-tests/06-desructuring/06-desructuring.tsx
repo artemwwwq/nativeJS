@@ -38,4 +38,5 @@ export const ManComponent: React.FC<PropsType> = (props) => {
             {man.name}
         </div>
     </div>
+
 }
